@@ -1,0 +1,31 @@
+#   # # Terraform Destroy
+#   # - job: terraform_destroy
+#   #   displayName: 'Terraform Destroy'
+#   #   steps:
+#   #   - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
+#   #     displayName: terraform_install
+#   #     inputs:
+#   #       terraformVersion: 'latest'
+
+#   #   - task: TerraformTask@5
+#   #     displayName: terraform_init
+#   #     inputs:
+#   #       provider: 'azurerm'
+#   #       workingDirectory: 'sampleylrepo/environment/production'
+#   #       command: 'init'
+#   #       backendAzureRmUseEntraIdForAuthentication: false
+#   #       backendServiceArm: 'SCN-yukleong001'
+#   #       backendAzureRmResourceGroupName: 'rg-terraform-principal-ea-002'
+#   #       backendAzureRmStorageAccountName: 'stgprintestea'
+#   #       backendAzureRmContainerName: 'container-principal-test-001'
+#   #       backendAzureRmKey: 'demoprincipal02.tfstate'
+
+#   #   - task: TerraformTask@5
+#   #     displayName: terraform_destroy
+#   #     inputs:
+#   #       provider: 'azurerm'
+#   #       workingDirectory: 'sampleylrepo/environment/production'
+#   #       command: 'destroy'
+#   #       environmentServiceNameAzureRM: 'SCN-yukleong001'
+
+
